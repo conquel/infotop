@@ -1,6 +1,6 @@
 /**
  *
- * infotop.js - a tiny, simple and framework-independent library 
+ * infotop.js is a tiny, simple and framework-independent notification library 
  * designed to display info messages on top of page
  *
  * By Victor Petrakov
@@ -21,8 +21,9 @@ var displayDelay = 1000;
 var fadeOutDelay = 2000;
 var width = "320px";
 var maxWidth = "90%";
-var border = "1px solid #ffb41e";
-var background = "#ffe88d";
+var border = "1px solid #FFB41E";
+var background = "#FFE88D";
+var color = "#000000";
 var id = infoTopDefaultTargetId;
 
 if (typeof params !== 'undefined') {
@@ -47,6 +48,9 @@ if (typeof params !== 'undefined') {
 	if (typeof params.background !== 'undefined') {
 	background = params.background;
 	}
+	if (typeof params.color !== 'undefined') {
+	color = params.color;
+	}
 	if (typeof params.id !== 'undefined') {
 	id = params.id;
 	}
@@ -65,6 +69,7 @@ infoFrame.style.borderLeft = border;
 infoFrame.style.borderRight = border;
 infoFrame.style.borderBottom = border;
 infoFrame.style.background = background;
+infoFrame.style.color = color;
 info.style.paddingRight = "15px";
 
 info.innerHTML = content;
