@@ -1,3 +1,3 @@
 # Documentation and demo
 
-[www.infotopjs.com](https://www.infotopjs.com/).
+[www.infotopjs.com](http://www.infotopjs.com/).
